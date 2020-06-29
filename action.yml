@@ -6,8 +6,8 @@ inputs:
     description: 'Input to use'
     default: 'Awesome Guru'
 outputs:
-  joke:
-    description: 'a funny joke'
+  memory:
+    description: 'total memory'
 runs:
   using: 'docker'
   image: 'Dockerfile'

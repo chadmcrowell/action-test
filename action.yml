@@ -5,6 +5,9 @@ inputs:
   myInput:
     description: 'Input to use'
     default: 'world'
+outputs:
+  distro: 
+    description: 'the distribution of Linux'
 runs:
   using: 'docker'
   image: 'Dockerfile'

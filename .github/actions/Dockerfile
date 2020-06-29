@@ -1,6 +1,4 @@
-FROM alpine:3.10
-
-RUN apk --no-cache add curl
+FROM curlimages/curl:7.71.0
 
 COPY entrypoint.sh /entrypoint.sh
 

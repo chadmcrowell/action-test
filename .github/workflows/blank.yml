@@ -13,6 +13,4 @@ jobs:
           myInput: 'Chad'
       # Runs a set of commands using the runners shell
       - name: tell a joke
-        run: |
-          echo "${{ steps.hello.outputs.memory }}"
-          curl -H "Accept: text/plain" https://icanhazdadjoke.com/
+        run: ${{ steps.hello.outputs.memory }}

@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM ubuntu:focal
 
 COPY entrypoint.sh /entrypoint.sh
 

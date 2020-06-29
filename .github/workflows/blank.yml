@@ -16,4 +16,4 @@ jobs:
       - name: output the memory
         run: |
           echo "${{ steps.hello.outputs.memory }}"
-          echo "${{ steps.hello.outputs.path}} added to PATH"
+          echo "${{ steps.hello.outputs.path }} added to PATH"

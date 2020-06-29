@@ -15,4 +15,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: tell a joke
         run: |
-          echo "here's a joke: ${{ steps.hello.outputs.memory }}"
+          echo "here's a joke ${{ steps.hello.outputs.memory }}"

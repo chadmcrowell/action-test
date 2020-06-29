@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM debian:9.5-slim
 
 RUN apk --no-cache add curl
 

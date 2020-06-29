@@ -14,6 +14,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: output the memory
-        run: |
-          echo "output the memory total"
-          ${{ steps.hello.outputs.memory }}
+        run: ${{ steps.hello.outputs.memory }}

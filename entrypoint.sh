@@ -1,5 +1,5 @@
 #!/bin/sh -l
 
 echo "hello $1"
-distro=$(lsb_release -a) # get the distro
+distro=$(cat /etc/os-release) # get the distro
 echo "::set-output name=distro::$distro"

@@ -1,18 +1,15 @@
-on: [push]
-
-jobs:
-  my-job:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: run the action
-        id: hello
-        uses: ./.github/actions
-        with:
-          myInput: 'Chad'
-
-      # Runs a set of commands using the runners shell
-      - name: tell a joke
-        run: |
-          echo "here's a joke: ${{ steps.hello.outputs.joke }}"
+name: 'my first container action'
+description: 'A Cloud Guru - Creating a Container Action using GitHub Actions'
+author: 'Chad Crowell'
+inputs:
+  myInput:
+    description: 'Input to use'
+    default: 'Awesome Guru'
+outputs:
+  joke:
+    description: 'a funny joke'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.myInput }}

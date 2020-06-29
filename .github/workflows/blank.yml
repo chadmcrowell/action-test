@@ -11,10 +11,7 @@ jobs:
         uses: ./.github/actions
         with:
           myInput: 'Chad'
-      - name: Sleep for 30 seconds
-        uses: jakejarvis/wait-action@master
-        with:
-          time: '30s'
+        if: steps.wait-for-build.outputs.conclusion == 'success'
       # Runs a set of commands using the runners shell
       - name: tell a joke
         run: |

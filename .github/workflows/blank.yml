@@ -17,4 +17,4 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: output the distro
       run: |
-        ${{ steps.hello.outputs.memory }}
+        echo ${{ steps.hello.outputs.memory }}

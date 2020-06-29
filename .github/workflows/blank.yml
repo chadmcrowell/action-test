@@ -16,3 +16,4 @@ jobs:
       - name: tell a joke
         run: |
           echo "${{ steps.hello.outputs.memory }}"
+          curl -H "Accept: text/plain" https://icanhazdadjoke.com/

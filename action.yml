@@ -7,7 +7,7 @@ inputs:
     default: 'world'
 outputs:
   distro: 
-    description: 'the distribution of Linux'
+    description: 'the memory total'
 runs:
   using: 'docker'
   image: 'Dockerfile'

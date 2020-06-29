@@ -8,6 +8,8 @@ inputs:
 outputs:
   memory:
     description: 'total memory'
+  path:
+    description: 'added to path'
 runs:
   using: 'docker'
   image: 'Dockerfile'

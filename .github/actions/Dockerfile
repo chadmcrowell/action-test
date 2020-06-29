@@ -1,4 +1,4 @@
-FROM curlimages/curl:7.71.0
+FROM byrnedo/alpine-curl
 
 COPY entrypoint.sh /entrypoint.sh
 

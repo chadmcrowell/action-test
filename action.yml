@@ -6,7 +6,7 @@ inputs:
     description: 'Input to use'
     default: 'Awesome Guru'
 outputs:
-  memory:
+  myOutput:
     description: 'total memory'
 runs:
   using: 'docker'
